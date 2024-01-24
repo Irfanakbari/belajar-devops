@@ -3,7 +3,7 @@ pipeline {
     environment {
         CI = 'true'
         NODE_ENV = 'production'
-        DOCKER_IMAGE = 'nama-image-docker:tag'
+        DOCKER_IMAGE = 'nama-image-docker'
     }
     stages {
         stage('Build Docker Image') {
