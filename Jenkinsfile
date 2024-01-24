@@ -6,22 +6,6 @@ pipeline {
         DOCKER_IMAGE = 'nama-image-docker:tag'
     }
     stages {
-        stage('Install Dependencies') {
-            steps {
-                script {
-                    sh 'npm install'
-                }
-            }
-        }
-
-        stage('Build') {
-            steps {
-                script {
-                    sh 'npm run build'
-                }
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 script {
