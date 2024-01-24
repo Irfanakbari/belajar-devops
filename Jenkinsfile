@@ -19,7 +19,7 @@ pipeline {
             steps {
                 script {
                     // Gantilah perintah ini sesuai dengan nama container dan konfigurasi deployment Anda
-                    sh 'docker run -d --name nama-container-docker -p 3000:3000 $DOCKER_IMAGE'
+                    sh 'docker run -d --name nextjs -p 3000:3000 $DOCKER_IMAGE'
                 }
             }
         }
