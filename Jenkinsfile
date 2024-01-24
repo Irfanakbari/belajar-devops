@@ -3,7 +3,7 @@ pipeline {
     environment {
         CI = 'true'
         NODE_ENV = 'production'
-        DOCKER_IMAGE = 'nama-image-docker'
+        DOCKER_IMAGE = 'nextjs'
     }
     stages {
         stage('Build Docker Image') {
